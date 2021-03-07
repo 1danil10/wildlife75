@@ -1,0 +1,43 @@
+.survival {
+  margin-top: -100px;
+  min-height: 780px;
+  background-color: #02160b;
+  background-image: url("../images/fox-bg.jpg");
+  background-image: url("../images//Group2.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.survival__inner {
+  padding-top: 200px;
+  padding-bottom: 240px;
+}
+
+.donate {
+  max-width: 274px;
+}
+
+.donate__title {
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  margin-bottom: 51px;
+}
+.donate__description {
+  font-size: 18px;
+  line-height: 27px;
+  padding-bottom: 49px;
+}
+.donate__button {
+  display: inline-block;
+  padding-left: 42px;
+  padding-top: 16px;
+  padding-right: 42px;
+  padding-bottom: 17px;
+  font-size: 23px;
+  text-decoration: none;
+  line-height: 27px;
+  background-color: var(--btn-bgcolor-default);
+  // background-color: blue;
+  border-radius: 5px;
+}
