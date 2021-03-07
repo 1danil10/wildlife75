@@ -23,3 +23,20 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-main-color);
+  &__img {
+    vertical-align: bottom;
+  }
+  &__title {
+    font-family: "Roboto";
+    font-size: 32px;
+    line-height: 60px;
+    text-transform: uppercase;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
