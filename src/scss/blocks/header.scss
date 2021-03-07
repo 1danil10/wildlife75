@@ -1,6 +1,7 @@
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
+
   background-color: #02160b;
 
   &__inner {
@@ -10,7 +11,6 @@
     align-items: center;
   }
   &__nav {
-    min-width: 540px;
     font-size: 23px;
   }
 }
@@ -18,15 +18,16 @@
 .nav {
   &__list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     //justify-content: flex-end;
     justify-content: space-between;
+    gap: 74px;
     align-items: center;
     text-align: center;
     list-style: none;
   }
   &__item {
-    //margin-left: 78px;
+    // margin-left: 78px;
   }
   &__link {
     color: inherit;
