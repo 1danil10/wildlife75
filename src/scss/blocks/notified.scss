@@ -1,0 +1,56 @@
+.notified {
+  background-color: #cccccc;
+}
+
+.notified__inner {
+  padding-top: 116px;
+  padding-bottom: 120px;
+}
+
+.notified__title {
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 60px;
+}
+
+.notified__subscribe {
+}
+
+.subscribe__wrapper {
+  margin: 0 auto;
+  max-width: 660px;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__input {
+  flex-grow: 1;
+  font-size: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  max-width: 540px;
+  line-height: 27px;
+  align-items: center;
+  background-color: #cccccc;
+  color: #666666;
+  font-family: "Roboto";
+}
+
+.subscribe__submit {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  line-height: 27px;
+  color: var(--main-text-color);
+  background-color: var(--btn-bgcolor-default);
+  padding-top: 16px;
+  padding-right: 1px;
+  padding-bottom: 16px;
+  border-radius: 0 5px 5px 0;
+  flex-basis: 120px;
+  font-family: "Roboto";
+  margin-left: -1px;
+}

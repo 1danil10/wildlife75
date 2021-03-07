@@ -1,0 +1,25 @@
+:root {
+  --btn-bgcolor-default: #cd6326;
+  --btn-bgcolor-hover: #e39128;
+  --btn-bgcolor-pressed: #8f5613;
+  //--text-main-color: #f7f7f7;
+  --text-main-color: yellow;
+  --text-headings-color: #666666;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  color: var(--text-main-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
