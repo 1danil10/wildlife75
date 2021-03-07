@@ -23,22 +23,36 @@
 }
 .slider {
   margin-top: 120px;
+  position: relative;
 
   &__inner {
+    margin: 0 auto;
+    max-width: 1080px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
   }
   &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 30px;
     height: 70px;
     background-color: transparent;
     border: none;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
+    }
   }
 }
 
 .slide {
+  flex-basis: calc(100% / 3 - 60px);
+  max-width: 300px;
   position: relative;
   text-align: center;
 

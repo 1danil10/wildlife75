@@ -15,6 +15,11 @@
 }
 
 body {
+  // background-image: url("../images//Group2.jpg");
+  // background-position: 50% 0;
+  // background-repeat: no-repeat;
+  // object-fit: cover;
+
   font-family: "Open Sans";
   color: var(--text-main-color);
 }
@@ -28,6 +33,8 @@ body {
   display: inline-block;
   text-decoration: none;
   color: var(--text-main-color);
+  white-space: nowrap;
+  margin-right: auto;
   &__img {
     vertical-align: bottom;
   }
