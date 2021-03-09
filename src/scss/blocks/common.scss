@@ -2,8 +2,7 @@
   --btn-bgcolor-default: #cd6326;
   --btn-bgcolor-hover: #e39128;
   --btn-bgcolor-pressed: #8f5613;
-  //--text-main-color: #f7f7f7;
-  --text-main-color: yellow;
+  --text-main-color: #f7f7f7;
   --text-headings-color: #666666;
 }
 *,
@@ -15,11 +14,6 @@
 }
 
 body {
-  // background-image: url("../images//Group2.jpg");
-  // background-position: 50% 0;
-  // background-repeat: no-repeat;
-  // object-fit: cover;
-
   font-family: "Open Sans";
   color: var(--text-main-color);
 }
@@ -30,7 +24,6 @@ body {
 }
 
 .logo {
-  display: inline-block;
   text-decoration: none;
   color: var(--text-main-color);
   white-space: nowrap;
@@ -46,4 +39,15 @@ body {
     padding-left: 11px;
     padding-right: 11px;
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

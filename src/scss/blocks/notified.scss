@@ -1,9 +1,9 @@
 .notified {
   background-color: #cccccc;
+  padding-top: 117px;
+  padding-bottom: 238px;
 
   &__inner {
-    padding-top: 116px;
-    padding-bottom: 120px;
   }
 
   &__title {
@@ -29,8 +29,6 @@
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 15px;
-    //width: 100%;
-    //max-width: 540px;
     line-height: 27px;
     flex-grow: 1;
     align-items: center;
@@ -39,7 +37,6 @@
     font-family: "Roboto";
   }
   &__submit {
-    //display: inline-block;
     text-align: center;
     font-size: 25px;
     line-height: 27px;
@@ -52,6 +49,15 @@
     min-width: 120px;
     font-family: "Roboto";
     margin: auto;
-    //   margin-left: -1px;
+    transition: all 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--btn-bgcolor-hover);
+    }
+    &:active {
+      background-color: var(--btn-bgcolor-pressed);
+    }
   }
 }

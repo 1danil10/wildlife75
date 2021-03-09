@@ -4,10 +4,14 @@
 
   background-color: #02160b;
 
+  background-image: url("../images/fox-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   &__inner {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+
     align-items: center;
   }
   &__nav {
@@ -19,44 +23,66 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    //justify-content: flex-end;
     justify-content: space-between;
-    gap: 74px;
+    gap: 62px;
     align-items: center;
     text-align: center;
     list-style: none;
   }
   &__item {
-    // margin-left: 78px;
   }
   &__link {
+    display: block;
     color: inherit;
     line-height: 47px;
-    //height: 100%;
     padding-top: 8px;
     padding-bottom: 8px;
     text-decoration: none;
     flex-basis: 100px;
+    transition: all 0.3s ease-out;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: var(--btn-bgcolor-hover);
+      transform: translateY(-3px);
+    }
+    &:active {
+      color: var(--btn-bgcolor-pressed);
+    }
   }
   &__link--search {
     position: relative;
-    & svg {
-      transform: translate(-50%, -50%);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-    }
+    top: 7px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     & path {
       fill: var(--text-main-color);
+      transition: all 0.3s ease-out;
+    }
+    &:hover path {
+      fill: var(--btn-bgcolor-hover);
+    }
+    &:active path {
+      fill: var(--btn-bgcolor-pressed);
     }
   }
+
   &__button {
     padding-top: 8px;
     padding-left: 22px;
     padding-right: 22px;
     padding-bottom: 8px;
     line-height: 27px;
-    border: 2px solid var(--text-main-color);
+    border: 2px solid var(--btn-bgcolor-hover);
     border-radius: 5px;
+    white-space: nowrap;
+    &:hover,
+    &:focus {
+      background-color: var(--btn-bgcolor-hover);
+      color: black;
+    }
+    &:active {
+      background-color: var(--btn-bgcolor-pressed);
+    }
   }
 }
