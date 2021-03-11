@@ -51,3 +51,11 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.survival-wrapper {
+  height: 780px;
+  background-image: url("../images/fox.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 780px;
+}
