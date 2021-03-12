@@ -1,23 +1,33 @@
 .footer {
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: #181617;
   background-image: url("/src/images/footer-bg.jpg");
   background-position: 50% -0;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 
   &__inner {
-    min-height: 360px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    min-height: 362px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 120px;
+    justify-content: flex-start;
     align-items: center;
+  }
+  &__inner > * {
+    margin: 0 auto;
   }
 
   &__nav-list {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
     flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 88px;
   }
 
   &__nav-item {
