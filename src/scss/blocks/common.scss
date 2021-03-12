@@ -12,6 +12,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  min-height: 100%;
+}
 
 body {
   font-family: "Open Sans";
@@ -29,7 +32,6 @@ body {
   text-decoration: none;
   color: var(--text-main-color);
   white-space: nowrap;
-  margin-right: auto;
   &__img {
     vertical-align: bottom;
   }
@@ -52,4 +54,13 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.bg-wrapper {
+  background-color: #02160b;
+  background-image: url("../images/fox-background.jpg");
+  min-height: 768px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,21 +1,23 @@
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
-
-  background-color: #02160b;
-
-  background-image: url("../images/fox-bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
   &__inner {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     align-items: center;
   }
   &__nav {
     font-size: 23px;
+    @media screen and (max-width: 735px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 735px) {
+    &__inner {
+      flex-direction: column;
+      align-items: start;
+    }
   }
 }
 
@@ -82,6 +84,17 @@
     }
     &:active {
       background-color: var(--btn-bgcolor-pressed);
+    }
+  }
+
+  @media screen and (max-width: 735px) {
+    & {
+      &__list {
+        display: block;
+      }
+      &__link {
+        display: block;
+      }
     }
   }
 }
