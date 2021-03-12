@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Athlon / Front-end Webpack Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!--      BG-WRAPPER      -->
+    <div class="bg-wrapper">
+      <!--      HEADER      -->
+      <header class="header">
+        <div class="container header__inner">
+          <a class="logo" href="#">
+            <img
+              class="logo__img"
+              src="./images/logo.svg"
+              width="70"
+              height="60"
+              alt="logo wildlife"
+            />
+            <span class="logo__title" href="#">Wildlife</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Blog</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contacts</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--search">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.688 18.688C16.001 18.688 18.688 16 18.688 12.688C18.688 9.376 16 6.688 12.688 6.688C9.376 6.688 6.688 9.376 6.688 12.688C6.688 16 9.376 18.688 12.688 18.688ZM20.688 18.688L27.313 25.313L25.313 27.313L18.688 20.688V19.625L18.313 19.25C16.813 20.563 14.813 21.313 12.688 21.313C7.875 21.313 4 17.5 4 12.688C4 7.876 7.875 4 12.688 4C17.501 4 21.313 7.875 21.313 12.688C21.313 14.813 20.563 16.813 19.25 18.313L19.625 18.688H20.688Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__button">Sign in</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!--      HEADER/      -->
+
+      <!--      SURVIVAL      -->
+      <section class="survival">
+        <div class="container survival__inner">
+          <h1 class="sr-only">Wildlife - main page</h1>
+          <div class="donate">
+            <h2 class="donate__title">Survival</h2>
+            <p class="donate__description">
+              What this means is that we exist to help protect our environment
+              and do in numbers of ways. You can save the planet by donation.
+            </p>
+            <a href="" class="donate__button">Donate</a>
+          </div>
+        </div>
+      </section>
+      <!--      SURVIVAL/      -->
+    </div>
+    <!--      BG-WRAPPER/      -->
+
+    <!--      LATEST_ARTICLES      -->
+    <section class="latest">
+      <div class="container latest__inner">
+        <h2 class="latest__title">Latest articles</h2>
+        <p class="latest__description">Breaking news from the wild</p>
+
+        <div class="slider">
+          <button class="slider__btn slider__btn--prev">
+            <svg
+              width="26"
+              height="39"
+              viewBox="0 0 26 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.991 3.25c0 .312-.178.664-.446.898L8.001 19.5l17.544 15.35c.268.235.446.586.446.899 0 .312-.178.663-.446.898L23.313 38.6a1.65 1.65 0 01-1.027.39c-.357 0-.759-.156-1.027-.39L.456 20.398c-.268-.235-.447-.586-.447-.899 0-.313.18-.664.447-.898L21.259.397a1.65 1.65 0 011.027-.39c.358 0 .759.156 1.027.39l2.232 1.953c.268.235.446.547.446.899z"
+                fill="#666"
+              />
+            </svg>
+          </button>
+          <div class="slider__inner">
+            <div class="slide">
+              <img class="slide__img" src="./images/Rectangle.jpg" alt="" />
+              <h3 class="slide__title">Deer</h3>
+              <p class="slide__description">Naturalist investigation</p>
+            </div>
+            <div class="slide">
+              <img class="slide__img" src="./images/Rectangle-1.jpg" alt="" />
+              <h3 class="slide__title">Squirrel</h3>
+              <p class="slide__description">Kamikaze squirrels</p>
+            </div>
+            <div class="slide">
+              <img class="slide__img" src="./images/Rectangle-2.jpg" alt="" />
+              <h3 class="slide__title">Bird</h3>
+              <p class="slide__description">Birds Fight club</p>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--next">
+            <svg
+              width="30"
+              height="39"
+              viewBox="0 0 30 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.6512 19.4997C29.6512 19.812 29.4517 20.1636 29.1531 20.3982L5.93029 38.6015C5.63098 38.8361 5.18308 38.992 4.78401 38.992C4.38494 38.992 3.93703 38.8356 3.63773 38.6015L1.14633 36.6486C0.847031 36.414 0.648193 36.1017 0.648193 35.7501C0.648193 35.4378 0.847728 35.0862 1.14633 34.8516L20.7308 19.5003L1.14633 4.14894C0.847031 3.91433 0.648193 3.56323 0.648193 3.25042C0.648193 2.93761 0.847728 2.58651 1.14633 2.3519L3.63773 0.399014C3.93703 0.164405 4.38494 0.00854492 4.78401 0.00854492C5.18308 0.00854492 5.63098 0.164952 5.93029 0.399014L29.1531 18.6023C29.4524 18.8369 29.6512 19.188 29.6512 19.5008V19.4997Z"
+                fill="#666666"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--      LATEST_ARTICLES/      -->
+
+    <!--      GET NOTIFIED      -->
+    <section class="notified">
+      <div class="container notified__inner">
+        <h2 class="notified__title">Get notified about new amazing articles</h2>
+        <form action="" class="notified_subscribe">
+          <div class="subscribe__wrapper">
+            <input class="subscribe__input" type="text" placeholder="Email" />
+            <input class="subscribe__submit" type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--      GET NOTIFIED/      -->
+
+    <!--      FOOTER      -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="logo" href="#">
+          <img
+            class="logo__img"
+            src="./images/logo.svg"
+            width="70"
+            height="60"
+            alt="logo wildlife"
+          />
+          <span class="logo__title" href="#">Wildlife</span>
+        </a>
+        <ul class="footer__nav-list">
+          <li class="footer___nav-item">
+            <a href="" class="footer__nav-link">Articles</a>
+          </li>
+
+          <li class="footer___nav-item">
+            <a href="" class="footer__nav-link">About us</a>
+          </li>
+
+          <li class="footer___nav-item">
+            <a href="" class="footer__nav-link">Learn more</a>
+          </li>
+        </ul>
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a
+              href=""
+              class="footer__socials-link footer__socials-link--fb"
+            ></a>
+          </li>
+
+          <li class="footer__socials-item">
+            <a
+              href=""
+              class="footer__socials-link footer__socials-link--inst"
+            ></a>
+          </li>
+          <li class="footer__socials-item">
+            <a
+              href=""
+              class="footer__socials-link footer__socials-link--pin"
+            ></a>
+          </li>
+          <li class="footer__socials-item">
+            <a
+              href=""
+              class="footer__socials-link footer__socials-link--tlgrm"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!--      FOOTER/      -->
+  </body>
+</html>
