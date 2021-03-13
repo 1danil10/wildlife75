@@ -69,9 +69,10 @@
   }
 
   &__button {
-    padding-top: 8px;
+    font-family: "Roboto";
+    padding-top: 10px;
     padding-left: 23px;
-    padding-right: 22px;
+    padding-right: 23px;
     padding-bottom: 8px;
     line-height: 27px;
     border: 2px solid var(--btn-bgcolor-hover);
